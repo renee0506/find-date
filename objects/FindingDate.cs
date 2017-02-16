@@ -13,6 +13,11 @@ namespace FindDate.Objects
       int monthInt = int.Parse(month);
       int dayInt = int.Parse(day);
       int yearInt = int.Parse(year);
+      int yearDiff = yearInt - 2000;//yearDiff = 2001-2000 = 1
+      double leapYear = yearDiff/4;
+      Console.WriteLine(Math.Ceiling(leapYear));
+      int leapYear1 = Convert.ToInt32(Math.Ceiling(leapYear));//leapYear = ceil(1/4) = 1
+      int daysPassedInYear = leapYear1*366 + (yearDiff-leapYear1)*365;//1*366+(1-1)*365 = 366
       int daysPassed = 0;
       if (monthInt > 1)
       {
@@ -21,8 +26,8 @@ namespace FindDate.Objects
           daysPassed = daysPassed + daysinMonth[i-1];
         }
       }
-      int dayDiff = daysPassed + (dayInt - 1);
-      return dayofweek[(dayDiff+6)%7];
+      int dayDiff = daysPassedInYear + daysPassed + (dayInt - 1);//366+0+0
+      return dayofweek[(dayDiff+6)%7];//372%7
 
     }
   }

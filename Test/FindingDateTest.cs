@@ -40,5 +40,12 @@ namespace FindDateTest
       FindingDate testFindingDate = new FindingDate();
       Assert.Equal("Tuesday", testFindingDate.FindDate("02", "01", "2000"));
     }
+
+    [Fact]
+    public void Date_findDay01012001_Monday()
+    {
+      FindingDate testFindingDate = new FindingDate();
+      Assert.Equal("Monday", testFindingDate.FindDate("01", "01", "2001"));
+    }
   }
 }
