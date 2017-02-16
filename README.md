@@ -39,6 +39,13 @@ number of leap year*366 + number of non-leap year*365
 * Input: Feb 1st, 2000
 * Output: "Tuesday"
 
+array = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+int days
+for (int i=1; i< monthInt; i++)
+{
+  days = days+ array[i-1];
+}
+
 #### If the date is Jan 1st, 2001, the program return "Monday"
 * Input: Jan 1st, 2000
 * Output: "Monday"
