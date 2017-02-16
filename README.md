@@ -57,3 +57,11 @@ for (int i=1; i< monthInt; i++)
 #### If the date is March 17th, 2005, the program return "Thursday"
 * Input: March 17th, 2005
 * Output: "Thursday"
+
+#### If the date is March 17th, 1999, the program return "Wednesday"
+* Input: March 17th, 1999
+* Output: "Wednesday"
+
+#### If the date is Aug 23rd, 1492, the program return "Wednesday"
+* Input: March 17th, 1999
+* Output: "Wednesday"
