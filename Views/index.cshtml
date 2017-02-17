@@ -1,0 +1,14 @@
+@{
+  Layout = "Shared/_Layout.cshtml";
+}
+
+<h1>Enter a date</h1>
+<form action="/result" method = "post">
+  <label for="user-month">Month:</label>
+  <input type="text" name="user-month">
+  <label for="user-day">Day:</label>
+  <input type="text" name="user-day">
+  <label for="user-year">Year:</label>
+  <input type="text" name="user-year" >
+  <button type="submit" class="btn">Submit</button>
+</form>

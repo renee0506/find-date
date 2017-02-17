@@ -66,28 +66,28 @@ namespace FindDateTest
     public void Date_findDay02031999_Wed()
     {
       FindingDate testFindingDate = new FindingDate();
-      Assert.Equal("Friday", testFindingDate.FindDateBackward("12", "31", "1999"));
+      Assert.Equal("Friday", testFindingDate.FindDate("12", "31", "1999"));
     }
 
     [Fact]
     public void Date_findDay08231995_Wed()
     {
       FindingDate testFindingDate = new FindingDate();
-      Assert.Equal("Wednesday", testFindingDate.FindDateBackward("08", "23", "1995"));
+      Assert.Equal("Wednesday", testFindingDate.FindDate("08", "23", "1995"));
     }
 
     [Fact]
     public void Date_findDay08231899_Fri()
     {
       FindingDate testFindingDate = new FindingDate();
-      Assert.Equal("Friday", testFindingDate.FindDateBackward("08", "23", "1889"));
+      Assert.Equal("Friday", testFindingDate.FindDate("08", "23", "1889"));
     }
 
     [Fact]
     public void Date_findDay02031599_Thur()
     {
       FindingDate testFindingDate = new FindingDate();
-      Assert.Equal("Thursday", testFindingDate.FindDateBackward("02", "03", "1599"));
+      Assert.Equal("Thursday", testFindingDate.FindDate("02", "03", "1599"));
     }
 
     [Fact]
